@@ -1,0 +1,125 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;1,600&family=Narnoor&family=Poppins:ital,wght@0,300;0,400;0,600;0,700;1,500&family=Tilt+Prism&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: whitesmoke;
+}
+
+
+.logo{
+    font-family: 'Narnoor', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    font-size: larger;
+    font-weight: 700;
+    margin: 0  20px;
+ 
+}
+
+nav{
+    display: flex; 
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    background-color: blueviolet;
+    padding: 20px;
+   
+}
+nav ul{
+    display: flex; 
+    filter: drop-shadow(10px 10px 10px black);
+    
+}   
+nav  li{
+    list-style: none;
+    margin: 0 20px;
+}
+nav li a{
+    text-decoration: none;
+    color: black;
+    transition: all;
+    transition-duration: 450ms;
+}
+nav li a:hover{
+    color:whitesmoke;
+}
+
+
+.container{
+    min-height: 100vh;
+    font-family: 'Poppins', sans-serif;
+  
+    max-width: 80vw;
+    margin: auto;
+}
+.container h1{
+    margin: 23px 0;
+}
+.container form{
+    display: flex;
+    flex-direction: column;
+}
+.container  form input[type ="number"],select,label{
+   
+    font-size: 25px;
+    width: 20vw;
+    margin-bottom: 25px;
+}
+
+.rights{
+    text-align: center;
+    font-family: 'sans-serif', cursive;
+    font-weight: 500;
+}
+.btn{
+   width: 10vw;
+    border: 2px solid white;
+    border-radius: 20px;
+    font-size: 1.25rem;
+    background-color: blueviolet;
+    color:white;
+    cursor: pointer;
+    padding: 10px 15px;
+}
+.result table{
+    width: 50vw;
+    text-align: center;
+    border: 5px solid white;
+    font-size: 20px;
+}
+.result{
+    display: none;
+}
+
+@media (max-width: 600px) {
+            
+
+    nav {
+        flex-direction: column;
+        font-size: 14px;
+    }
+
+    nav ul li {
+        margin: 5px 13px;
+    }
+
+    nav ul {
+        justify-content: center;
+    }
+
+    .container {
+        max-width: 95vw;
+    }
+
+    .container form input[type='number'],
+    select,
+    label {
+        width: 80vw;
+    }
+}
